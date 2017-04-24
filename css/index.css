@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html, body {
   width: 100%;
@@ -37,40 +38,71 @@ html, body {
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       box-shadow: 0px 0px 5px 2px #dfe0e4; }
-      #background #page #nav ul {
-        width: 100%;
-        list-style: none; }
-        #background #page #nav ul #boards {
+      #background #page #nav #boards {
+        width: 15%;
+        float: left;
+        padding: 25px 0 0 25px; }
+        #background #page #nav #boards .icon-th-large {
+          width: 20%;
           float: left;
-          width: 15%; }
-        #background #page #nav ul #search {
+          font-size: 18px; }
+        #background #page #nav #boards #boards-title {
+          width: 80%;
           float: left;
-          width: 15%; }
-        #background #page #nav ul #trello {
-          float: left;
-          color: #4586fe;
-          font-family: 'Pacifico', cursive;
-          font-size: 24px;
-          width: 40%;
-          text-align: center; }
-        #background #page #nav ul #user {
-          float: left;
-          font-family: Arial, sans-serif;
-          width: 12%; }
-          #background #page #nav ul #user #user-icon {
-            float: left;
-            border-radius: 7px;
-            width: 30%; }
-          #background #page #nav ul #user #username {
-            float: left;
-            width: 70%; }
-        #background #page #nav ul #notifications {
-          float: left;
-          width: 10%; }
-        #background #page #nav ul #menu {
-          border-left: 2px solid #dfe0e4;
-          width: calc(10% - 2px);
+          font-family: Arial, sans-serif; }
+      #background #page #nav #search {
+        width: 15%;
+        float: left;
+        padding: 25px 0 0 15px; }
+        #background #page #nav #search .icon-search {
+          width: 20%;
           float: left; }
+        #background #page #nav #search input[type=search] {
+          width: 80%;
+          float: left;
+          background-color: transparent; }
+      #background #page #nav #trello {
+        color: #4586fe;
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        width: 40%;
+        float: left;
+        text-align: center;
+        padding: 8px 0 0 0; }
+      #background #page #nav #user {
+        width: 20%;
+        float: left; }
+        #background #page #nav #user #user-icon {
+          border-radius: 7px;
+          width: 16%;
+          margin-left: 44%;
+          float: left;
+          padding: 16px 5px 0 10px; }
+        #background #page #nav #user #username {
+          width: 40%;
+          font-family: Arial, sans-serif;
+          float: left;
+          padding: 26px 0 0 10px; }
+      #background #page #nav #notifications {
+        width: 5%;
+        float: left; }
+        #background #page #nav #notifications .icon-bell-o {
+          width: 100%;
+          float: left;
+          padding-top: 25px;
+          font-size: 18px;
+          text-align: center; }
+      #background #page #nav #menu {
+        border-left: 2px solid #dfe0e4;
+        width: calc(5% - 2px);
+        float: left;
+        height: 100%; }
+        #background #page #nav #menu .icon-list {
+          width: 100%;
+          float: left;
+          padding-top: 22px;
+          font-size: 24px;
+          text-align: center; }
     #background #page #add-btn {
       color: white;
       background-color: #4586fe;
