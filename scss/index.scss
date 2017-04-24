@@ -1,10 +1,14 @@
-$color1: #dfe0e4;
+$bgcolor1: #dfe0e4;
 
-$color2: #4586fe;
+$bgcolor2: #4586fe;
 
 $color3: #f6f7fb;
 
 $color4: #ffffff;
+
+$icon-color: #cbcfd2;
+
+$text-color: #989fa7;
 
 * {
     margin: 0;
@@ -24,7 +28,7 @@ html, body {
     left: 50%;
     width: 100%; 
     height: 100%; 
-    background-color: $color2;
+    background-color: $bgcolor2;
     top: 0;
     transform: skewX(-34deg);
 }
@@ -35,7 +39,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: $color1;
+    background-color: $bgcolor1;
 
     #page {
 
@@ -45,7 +49,7 @@ html, body {
         background-color: $color3;
         position: relative;
         border-radius: 15px;
-        box-shadow: 0px 0px 5px 2px $color1;
+        box-shadow: 0px 0px 5px 2px $bgcolor1;
 
         #nav {
 
@@ -54,20 +58,21 @@ html, body {
             background-color: $color4;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            box-shadow: 0px 0px 5px 2px $color1;
+            box-shadow: 0px 0px 5px 2px $bgcolor1;
 
             #boards {
 
                 width: 15%;
                 float: left;
-                padding: 25px 0 0 25px;
                 
 
                 .icon-th-large {
 
                     width: 20%;
+                    padding: 25px 0 0 25px;
                     float: left;
                     font-size: 18px;
+                    color: $icon-color;
 
                 }
 
@@ -76,7 +81,9 @@ html, body {
                     width: 80%;
                     float: left;
                     font-family: Arial, sans-serif;
-                    
+                    padding: 25px 0 0 15px;
+                    color: $text-color;
+
                 }
 
             }
@@ -85,12 +92,14 @@ html, body {
 
                 width: 15%;
                 float: left;
-                padding: 25px 0 0 15px;
 
                 .icon-search {
 
                     width: 20%;
                     float: left;
+                    padding: 24px 0 0 15px;
+                    font-size: 18px;
+                    color: $icon-color;
 
                 }
 
@@ -98,16 +107,35 @@ html, body {
                     
                     width: 80%;
                     float: left;
+                    padding: 26px 0 0 0;
                     background-color: transparent;
-                    
+                    border: none;
+                    outline: none;  
+                    color: $text-color;
 
+                }
+
+                input[type=search]::-webkit-input-placeholder {
+                    color: $icon-color;
+                }
+                
+                input[type=search]:-moz-placeholder { /* Firefox 18- */
+                    color: $icon-color;
+                }
+                
+                input[type=search]::-moz-placeholder {  /* Firefox 19+ */
+                    color: $icon-color;  
+                }
+                
+                input[type=search]:-ms-input-placeholder {  
+                    color: $icon-color; 
                 }
 
             }
 
             #trello {
 
-                color: $color2;
+                color: $bgcolor2;
                 font-family: 'Pacifico', cursive;
                 font-size: 20px;        
                 width: 40%;
@@ -139,6 +167,7 @@ html, body {
                     font-family: Arial, sans-serif;
                     float: left;
                     padding: 26px 0 0 10px;
+                    color: $text-color;
 
                 }
 
@@ -155,13 +184,14 @@ html, body {
                     padding-top: 25px;
                     font-size: 18px;
                     text-align: center;
+                    color: $icon-color;
                 }
                 
             }
 
             #menu {
                 
-                border-left: 2px solid $color1;
+                border-left: 2px solid $bgcolor1;
                 width: calc(5% - 2px);
                 float: left;
                 height: 100%;
@@ -173,6 +203,7 @@ html, body {
                     padding-top: 22px;
                     font-size: 24px;
                     text-align: center;
+                    color: $icon-color;
 
                 }
 
@@ -180,20 +211,37 @@ html, body {
 
         }
 
+        #buttons {
+
+            width: 90%;
+            height: 40px;
+            margin: 34px auto 0;
+            
+            border: 1px solid black;
+
+
+        }
+
+
+
+
+
+
+
         #add-btn {
             color: white;
-            background-color: $color2;
+            background-color: $bgcolor2;
             height: 45px;
             width: 45px;
             border-radius: 50%;
             text-align: center;
-            position: relative;
+            position: absolute;
             line-height: 45px;
             vertical-align: middle;
             font-size: 20px;
             top: 88%;
             left: 92%;
-            box-shadow: 0px 3px 15px $color2;
+            box-shadow: 0px 3px 15px $bgcolor2;
         }
 
     }
