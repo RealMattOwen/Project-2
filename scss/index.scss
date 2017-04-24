@@ -4,6 +4,8 @@ $color2: #4586fe;
 
 $color3: #f6f7fb;
 
+$color4: #ffffff;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,49 +16,135 @@ html, body {
     height: 100%;
 }
 
-#background {
+#background:before {
+    
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%; 
+    height: 100%; 
+    background-color: $color2;
+    top: 0;
+    transform: skewX(-34deg);
+}
+
+#background { 
+
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: $color1;
-}
 
-#background:before { 
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 100%; 
-    height: 200%; 
-    background-color: $color2;
-    top: 0;
-    transform: rotate(45deg);
-}
+    #page {
 
-#page {
-
-    height: 90%;
-    width: 90%;
-    margin: 2.5% auto;
-    background-color: $color3;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px 2px $color1;
-
-    #add-btn {
-        color: white;
-        background-color: $color2;
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
-        text-align: center;
+        height: 90%;
+        width: 90%;
+        margin: 2.5% auto;
+        background-color: $color3;
         position: relative;
-        line-height: 45px;
-        vertical-align: middle;
-        font-size: 20px;
-        top: 88%;
-        left: 92%;
-        box-shadow: 0px 3px 15px $color2;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 2px $color1;
+
+        #nav {
+
+            width: 100%;
+            height: 8%;
+            background-color: $color4;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0px 0px 5px 2px $color1;
+
+            ul {
+
+                width: 100%;
+                list-style: none;
+
+                #boards {
+
+                    float: left;
+                    width: 15%;
+
+                }
+
+                #search {
+
+                    float: left;
+                    width: 15%;
+
+                }
+
+                #trello {
+
+                    float: left;
+                    color: $color2;
+                    font-family: 'Pacifico', cursive;
+                    font-size: 24px;        
+                    width: 40%;
+                    text-align: center;          
+                    
+                }
+
+                #user {
+                    
+                    float: left;
+                    font-family: Arial, sans-serif;
+                    width: 12%;
+
+                    #user-icon {
+
+                        float: left;
+                        border-radius: 7px;
+                        width: 30%;
+
+                    }
+
+                    #username {
+
+                        float: left;
+                        width: 70%;
+
+                    }
+
+                }
+
+                #notifications {
+                    
+                    float: left;
+                    width: 10%;
+                    
+                }
+
+                #menu {
+                    
+                    border-left: 2px solid $color1;
+                    width: calc(10% - 2px);
+                    float: left;
+
+                }
+
+            }
+
+        }
+
+        #add-btn {
+            color: white;
+            background-color: $color2;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            line-height: 45px;
+            vertical-align: middle;
+            font-size: 20px;
+            top: 88%;
+            left: 92%;
+            box-shadow: 0px 3px 15px $color2;
+        }
+
     }
 
 }
+
+

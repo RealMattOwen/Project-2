@@ -6,42 +6,82 @@ html, body {
   width: 100%;
   height: 100%; }
 
+#background:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #4586fe;
+  top: 0;
+  transform: skewX(-34deg); }
+
 #background {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: #dfe0e4; }
-
-#background:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 200%;
-  background-color: #4586fe;
-  top: 0;
-  transform: rotate(45deg); }
-
-#page {
-  height: 90%;
-  width: 90%;
-  margin: 2.5% auto;
-  background-color: #f6f7fb;
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 2px #dfe0e4; }
-  #page #add-btn {
-    color: white;
-    background-color: #4586fe;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    text-align: center;
+  #background #page {
+    height: 90%;
+    width: 90%;
+    margin: 2.5% auto;
+    background-color: #f6f7fb;
     position: relative;
-    line-height: 45px;
-    vertical-align: middle;
-    font-size: 20px;
-    top: 88%;
-    left: 92%;
-    box-shadow: 0px 3px 15px #4586fe; }
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 2px #dfe0e4; }
+    #background #page #nav {
+      width: 100%;
+      height: 8%;
+      background-color: #ffffff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0px 0px 5px 2px #dfe0e4; }
+      #background #page #nav ul {
+        width: 100%;
+        list-style: none; }
+        #background #page #nav ul #boards {
+          float: left;
+          width: 15%; }
+        #background #page #nav ul #search {
+          float: left;
+          width: 15%; }
+        #background #page #nav ul #trello {
+          float: left;
+          color: #4586fe;
+          font-family: 'Pacifico', cursive;
+          font-size: 24px;
+          width: 40%;
+          text-align: center; }
+        #background #page #nav ul #user {
+          float: left;
+          font-family: Arial, sans-serif;
+          width: 12%; }
+          #background #page #nav ul #user #user-icon {
+            float: left;
+            border-radius: 7px;
+            width: 30%; }
+          #background #page #nav ul #user #username {
+            float: left;
+            width: 70%; }
+        #background #page #nav ul #notifications {
+          float: left;
+          width: 10%; }
+        #background #page #nav ul #menu {
+          border-left: 2px solid #dfe0e4;
+          width: calc(10% - 2px);
+          float: left; }
+    #background #page #add-btn {
+      color: white;
+      background-color: #4586fe;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      line-height: 45px;
+      vertical-align: middle;
+      font-size: 20px;
+      top: 88%;
+      left: 92%;
+      box-shadow: 0px 3px 15px #4586fe; }
