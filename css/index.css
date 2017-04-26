@@ -131,17 +131,18 @@ html, body {
       margin: 34px auto 0; }
       #background #page #buttons #team {
         width: 30%;
-        border: 1px solid black; }
+        float: left; }
         #background #page #buttons #team #star {
           width: 40px;
           height: 40px;
           position: relative;
-          display: inline-block;
+          float: left;
           background: #4886ff;
           text-align: center;
           padding: 10px;
           border-radius: 6px;
-          box-shadow: 0px 1px 4px 1px #4886ff; }
+          box-shadow: 0px 1px 4px 1px #4886ff;
+          margin-right: 20px; }
           #background #page #buttons #team #star .icon-star {
             color: #ffffff; }
           #background #page #buttons #team #star #star-background {
@@ -152,18 +153,37 @@ html, body {
             top: -17px;
             left: 4.9px;
             border-radius: 20px; }
-        #background #page #buttons #team #team-members {
-          position: relative;
-          display: inline-block;
-          width: 40%;
-          top: -9px; }
-        #background #page #buttons #team #team-name {
-          position: relative;
-          display: inline-block;
-          width: 40%;
-          top: 10px;
-          left: -166px;
-          color: #989fa7; }
+          #background #page #buttons #team #star #team-members {
+            position: relative;
+            float: left;
+            width: 40%;
+            top: -9px; }
+          #background #page #buttons #team #star #team-name {
+            position: relative;
+            float: left;
+            width: 40%;
+            top: 10px;
+            left: -166px;
+            color: #989fa7; }
+      #background #page #buttons #members {
+        width: 20%;
+        float: left;
+        margin-left: 10%; }
+        #background #page #buttons #members #all-members {
+          width: 50%;
+          float: left;
+          text-align: center;
+          padding: 10px;
+          background-color: #ffffff;
+          border: 2px solid transparent;
+          box-shadow: 0px 0px 5px 0px #dfe0e4; }
+        #background #page #buttons #members #my-team {
+          width: 50%;
+          float: left;
+          text-align: center;
+          padding: 10px;
+          background-color: #f6f7fb;
+          border: 2px solid #cbcfd2; }
     #background #page #add-btn {
       color: white;
       background-color: #4586fe;

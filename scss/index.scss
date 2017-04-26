@@ -223,19 +223,20 @@ html, body {
             #team {
 
                 width: 30%;
-                border: 1px solid black;
+                float: left;
 
                 #star {
 
                     width: 40px;
                     height: 40px;
                     position: relative;
-                    display: inline-block;
+                    float: left;
                     background: $star-color;
                     text-align: center;
                     padding: 10px;
                     border-radius: 6px;
                     box-shadow: 0px 1px 4px 1px $star-color;
+                    margin-right: 20px;
 
                     .icon-star {
 
@@ -255,33 +256,54 @@ html, body {
                     
                     }
 
+                    #team-members {
+                        position: relative;
+                        float: left;
+                        width: 40%;
+                        top: -9px;
+                    }
+
+                    #team-name {
+                        position: relative;
+                        float: left;   
+                        width: 40%;
+                        top: 10px;
+                        left: -166px;
+                        color: $text-color;
+                    }
+                    
                 }
 
-                #team-members {
-                    position: relative;
-                    display: inline-block;
-                    width: 40%;
-                    top: -9px;
+            }
+
+            #members {
+
+                width: 20%;
+                float: left;
+                margin-left: 10%;
+
+                #all-members {
+                    width: 50%;
+                    float: left;
+                    text-align: center;  
+                    padding: 10px;
+                    background-color: $color4;
+                    border: 2px solid transparent;
+                    box-shadow: 0px 0px 5px 0px $bgcolor1;            
                 }
 
-                #team-name {
-                    position: relative;
-                    display: inline-block;   
-                    width: 40%;
-                    top: 10px;
-                    left: -166px;
-                    color: $text-color;
+                #my-team {
+                    width: 50%;
+                    float: left;
+                    text-align: center;
+                    padding: 10px;
+                    background-color: $color3;
+                    border: 2px solid $icon-color;
                 }
-            
+
             }
 
         }
-
-
-
-
-
-
 
         #add-btn {
             color: white;
