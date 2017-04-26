@@ -226,6 +226,41 @@ html, body {
           border-top-right-radius: 3px;
           border-bottom-right-radius: 3px;
           font-size: 20px; }
+    #background #page #cards {
+      width: 90%;
+      height: 72%;
+      margin: 34px auto 0; }
+      #background #page #cards .start-card {
+        width: 23.281%;
+        height: 48.65%;
+        margin: 0 1% 1% 0;
+        border: 1px solid black;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 4px; }
+      #background #page #cards .end-card {
+        width: 23.281%;
+        height: 48.65%;
+        margin: 0 0 1% 1%;
+        border: 1px solid black;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 4px; }
+      #background #page #cards .card {
+        width: 23.281%;
+        height: 48.65%;
+        margin: 0 1% 1%;
+        border: 1px solid black;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 4px; }
+      #background #page #cards #add-card {
+        width: 23.281%;
+        height: 48.65%;
+        margin: 0 0 1% 1%;
+        border: 1px dashed #cbcfd2;
+        display: inline-block;
+        border-radius: 4px; }
     #background #page #add-btn {
       color: white;
       background-color: #4586fe;
@@ -237,6 +272,6 @@ html, body {
       line-height: 45px;
       vertical-align: middle;
       font-size: 20px;
-      top: 88%;
+      top: 90%;
       left: 92%;
       box-shadow: 0px 3px 15px #4586fe; }
