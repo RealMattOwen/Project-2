@@ -234,26 +234,26 @@ html, body {
         width: 23.281%;
         height: 48.65%;
         margin: 0 1% 1% 0;
-        border: 1px solid black;
         display: inline-block;
         background-color: #ffffff;
-        border-radius: 4px; }
-      #background #page #cards .end-card {
-        width: 23.281%;
-        height: 48.65%;
-        margin: 0 0 1% 1%;
-        border: 1px solid black;
-        display: inline-block;
-        background-color: #ffffff;
-        border-radius: 4px; }
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 1px #cbcfd2; }
       #background #page #cards .card {
         width: 23.281%;
         height: 48.65%;
         margin: 0 1% 1%;
-        border: 1px solid black;
         display: inline-block;
         background-color: #ffffff;
-        border-radius: 4px; }
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 1px #cbcfd2; }
+      #background #page #cards .end-card {
+        width: 23.281%;
+        height: 48.65%;
+        margin: 0 0 1% 1%;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 1px #cbcfd2; }
       #background #page #cards .profile-img {
         width: 60px;
         height: 60px;
@@ -264,27 +264,33 @@ html, body {
         width: 40%;
         float: left;
         margin: 10px 30% 0;
-        text-align: center; }
+        text-align: center;
+        font-family: Arial, sans-serif; }
+        #background #page #cards .username .handle {
+          color: #cbcfd2; }
       #background #page #cards .icons {
         width: 100%;
         height: 40px;
         margin: 56px 0 0;
-        border: 1px solid black;
+        border: 1px solid #cbcfd2;
         padding: 10px 0 0 0; }
         #background #page #cards .icons .pencil {
           float: left;
-          margin: 0 14.1%; }
+          margin: 0 14.1%;
+          color: #cbcfd2; }
         #background #page #cards .icons .bell {
           float: left;
-          margin: 0 14.1%; }
+          margin: 0 14.1%;
+          color: #cbcfd2; }
         #background #page #cards .icons .garbage {
           float: left;
-          margin: 0 14.1%; }
+          margin: 0 14.1%;
+          color: #cbcfd2; }
       #background #page #cards .info {
         width: 100%;
         height: 40px;
         margin: 83px 0 0;
-        border: 1px solid black;
+        border: 1px solid #cbcfd2;
         padding: 10px 0 0 0; }
         #background #page #cards .info .user-cards {
           width: 50%;
@@ -296,10 +302,13 @@ html, body {
           border-right: 1px solid #cbcfd2; }
           #background #page #cards .info .user-cards .info-button1-icon {
             float: left;
-            padding: 11px 6px 0 40px; }
+            padding: 11px 6px 0 40px;
+            color: #cbcfd2; }
           #background #page #cards .info .user-cards .info-button1 {
             float: left;
-            padding: 10px 0 0 0; }
+            padding: 10px 0 0 0;
+            color: #989fa7;
+            font-family: Arial, sans-serif; }
         #background #page #cards .info .user-profile {
           width: 50%;
           height: 40px;
@@ -310,10 +319,13 @@ html, body {
           border-left: 1px solid #cbcfd2; }
           #background #page #cards .info .user-profile .info-button2-icon {
             float: left;
-            padding: 11px 6px 0 26px; }
+            padding: 11px 6px 0 26px;
+            color: #cbcfd2; }
           #background #page #cards .info .user-profile .info-button2 {
             float: left;
-            padding: 10px 0 0 0; }
+            padding: 10px 0 0 0;
+            color: #989fa7;
+            font-family: Arial, sans-serif; }
       #background #page #cards #add-card {
         width: 23.281%;
         height: 48.65%;
@@ -321,6 +333,26 @@ html, body {
         border: 1px dashed #cbcfd2;
         display: inline-block;
         border-radius: 4px; }
+        #background #page #cards #add-card #placeholder-img {
+          width: 60px;
+          height: 60px;
+          margin: 14px 40% 0;
+          position: relative;
+          top: 80px; }
+          #background #page #cards #add-card #placeholder-img .icon-user-plus {
+            margin-top: 40px;
+            padding: 0 15%;
+            font-size: 60px;
+            color: #cbcfd2; }
+        #background #page #cards #add-card #add-text {
+          width: 40%;
+          float: left;
+          margin: 10px 30% 0;
+          position: relative;
+          top: 80px;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          color: #cbcfd2; }
     #background #page #add-btn {
       color: white;
       background-color: #4586fe;

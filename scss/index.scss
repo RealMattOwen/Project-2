@@ -361,30 +361,17 @@ html, body {
             width: 90%;
             height: 72%;
             margin: 34px auto 0;
-            //border: 1px solid black;
 
             .start-card {
 
                 width: 23.281%;
                 height: 48.65%;
                 margin: 0 1% 1% 0;
-                border: 1px solid black;
                 display: inline-block;
                 background-color: $color4;
                 border-radius: 4px;
-                
-            }
+                box-shadow: 0px 0px 4px 1px $icon-color;
 
-            .end-card {
-
-                width: 23.281%;
-                height: 48.65%;
-                margin: 0 0 1% 1%;
-                border: 1px solid black;
-                display: inline-block;
-                background-color: $color4;
-                border-radius: 4px;
-                
             }
 
             .card {
@@ -392,13 +379,25 @@ html, body {
                 width: 23.281%;
                 height: 48.65%;
                 margin: 0 1% 1%;
-                border: 1px solid black;
                 display: inline-block;
                 background-color: $color4;
                 border-radius: 4px;
+                box-shadow: 0px 0px 4px 1px $icon-color;
                 
             }
-                
+            
+            .end-card {
+
+                width: 23.281%;
+                height: 48.65%;
+                margin: 0 0 1% 1%;
+                display: inline-block;
+                background-color: $color4;
+                border-radius: 4px;
+                box-shadow: 0px 0px 4px 1px $icon-color;
+
+            }
+    
             .profile-img {
                 width: 60px;
                 height: 60px;
@@ -412,6 +411,12 @@ html, body {
                 float: left;
                 margin: 10px 30% 0;
                 text-align: center;
+                font-family: Arial, sans-serif;
+
+                .handle {
+                    color: $icon-color;
+                }
+
             }
 
             .icons {
@@ -419,23 +424,25 @@ html, body {
                 width: 100%;
                 height: 40px;
                 margin: 56px 0 0;
-                border: 1px solid black;
+                border: 1px solid $icon-color;
                 padding: 10px 0 0 0;
-
 
                 .pencil {
                     float: left;
                     margin: 0 14.1%;
+                    color: $icon-color;
                 }
 
                 .bell {
                     float: left;
                     margin: 0 14.1%;
+                    color: $icon-color;
                 }
 
                 .garbage {
                     float: left;
                     margin: 0 14.1%;
+                    color: $icon-color;
                 }
 
             }
@@ -449,7 +456,7 @@ html, body {
                 width: 100%;
                 height: 40px;
                 margin: 83px 0 0;
-                border: 1px solid black;
+                border: 1px solid $icon-color;
                 padding: 10px 0 0 0;
 
                 .user-cards {
@@ -464,11 +471,14 @@ html, body {
                     .info-button1-icon {
                         float: left;
                         padding: 11px 6px 0 40px;
+                        color: $icon-color;
                     }
 
                     .info-button1 {
                         float: left;
                         padding: 10px 0 0 0;
+                        color: $text-color;
+                        font-family: Arial, sans-serif;
                     }
 
                 }
@@ -485,11 +495,14 @@ html, body {
                     .info-button2-icon {
                         float: left;
                         padding: 11px 6px 0 26px;
+                        color: $icon-color;
                     }
 
                     .info-button2 {
                         float: left;
                         padding: 10px 0 0 0;
+                        color: $text-color;
+                        font-family: Arial, sans-serif;
                     }
 
                 }
@@ -504,6 +517,36 @@ html, body {
                 border: 1px dashed $icon-color;
                 display: inline-block;
                 border-radius: 4px;
+
+                #placeholder-img {
+
+                    width: 60px;
+                    height: 60px;
+                    margin: 14px 40% 0;
+                    position: relative;
+                    top: 80px;
+
+                    .icon-user-plus {
+                        margin-top: 40px;
+                        padding: 0 15%;
+                        font-size: 60px;
+                        color: $icon-color;
+                    }
+                    
+                }
+
+                #add-text {
+
+                    width: 40%;
+                    float: left;
+                    margin: 10px 30% 0;
+                    position: relative;
+                    top: 80px;
+                    text-align: center;
+                    font-family: Arial, sans-serif;
+                    color: $icon-color;
+
+                }
 
             }
 
