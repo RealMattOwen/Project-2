@@ -398,6 +398,103 @@ html, body {
                 border-radius: 4px;
                 
             }
+                
+            .profile-img {
+                width: 60px;
+                height: 60px;
+                background-color: $bgcolor2;
+                border-radius: 50%;
+                margin: 14px 40% 0;
+            }
+
+            .username {
+                width: 40%;
+                float: left;
+                margin: 10px 30% 0;
+                text-align: center;
+            }
+
+            .icons {
+
+                width: 100%;
+                height: 40px;
+                margin: 56px 0 0;
+                border: 1px solid black;
+                padding: 10px 0 0 0;
+
+
+                .pencil {
+                    float: left;
+                    margin: 0 14.1%;
+                }
+
+                .bell {
+                    float: left;
+                    margin: 0 14.1%;
+                }
+
+                .garbage {
+                    float: left;
+                    margin: 0 14.1%;
+                }
+
+            }
+
+            .tasks {
+
+            }
+
+            .info {
+
+                width: 100%;
+                height: 40px;
+                margin: 83px 0 0;
+                border: 1px solid black;
+                padding: 10px 0 0 0;
+
+                .user-cards {
+                    width: 50%;
+                    height: 40px;
+                    float: left;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-top: -11px;
+                    border-right: 1px solid $icon-color;
+
+                    .info-button1-icon {
+                        float: left;
+                        padding: 11px 6px 0 40px;
+                    }
+
+                    .info-button1 {
+                        float: left;
+                        padding: 10px 0 0 0;
+                    }
+
+                }
+
+                .user-profile {
+                    width: 50%;
+                    height: 40px;
+                    float: left;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-top: -11px;
+                    border-left: 1px solid $icon-color;
+
+                    .info-button2-icon {
+                        float: left;
+                        padding: 11px 6px 0 26px;
+                    }
+
+                    .info-button2 {
+                        float: left;
+                        padding: 10px 0 0 0;
+                    }
+
+                }
+
+            }
 
             #add-card {
 
