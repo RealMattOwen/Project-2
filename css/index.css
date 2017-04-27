@@ -299,7 +299,7 @@ html, body {
             padding: 11px 6px 0 40px; }
           #background #page #cards .info .user-cards .info-button1 {
             float: left;
-            padding: 10px 0 0; }
+            padding: 10px 0 0 0; }
         #background #page #cards .info .user-profile {
           width: 50%;
           height: 40px;
